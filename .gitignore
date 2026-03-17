@@ -1,0 +1,64 @@
+# ============================================
+# PROTOCOLO S1 — .gitignore
+# ============================================
+
+# Ambiente — NUNCA subir
+.env
+.env.local
+.env.production
+.env.*.local
+
+# O método (comandos do wizard) — NÃO subir no repo público
+# Descomente abaixo se o repo for público:
+# .claude/commands/
+# .claude/skills/
+
+# Build output
+dist/
+.astro/
+
+# Dependências
+node_modules/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+*.lock
+!package-lock.json
+
+# Imagens originais (subir apenas as otimizadas em /public)
+src/assets/originals/
+*.psd
+*.ai
+*.fig
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+
+# Cache
+.cache/
+.parcel-cache/
+.turbo/
+
+# Vercel
+.vercel/
+
+# Imagens do projeto (específicas de cada usuário — nunca subir no template)
+public/images/*.jpg
+public/images/*.jpeg
+public/images/*.png
+public/images/*.webp
+public/images/*.gif
+# Manter a pasta no repo
+!public/images/.gitkeep
+
+# Documentos legais gerados (específicos de cada projeto)
+docs/legal/
+
+# PRD preenchido (específico de cada projeto)
+# Comente a linha abaixo se quiser versionar seu PRD
+docs/PRD.md
+docs/dns-records.txt
