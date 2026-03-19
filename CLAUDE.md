@@ -1,11 +1,28 @@
-# PROTOCOLO S1 — v7
+# PROTOCOLO S1 — v7.1
 
 ## O que é este projeto
 
 Framework de landing page de alta conversão para ofertas digitais.
 Páginas que carregam em menos de 1 segundo e convertem tráfego frio em compradores.
 
-Compatível com: **Claude Code** · **Antigravity** · **Cursor** · **Windsurf**
+Compatível com: **Claude Code** · **Antigravity** · **OpenClaw** · **Cursor** · **Windsurf**
+
+---
+
+## ⚠️ INSTRUÇÕES IMPORTANTES
+
+**IGNORE os seguintes diretórios e arquivos — eles são para outros CLIs:**
+- `.openclaw/` — específico do OpenClaw
+- `SOUL.md` — específico do OpenClaw
+- `.agent/` — específico do Antigravity
+- `.cursor/` — específico do Cursor/Windsurf
+
+**USE APENAS:**
+- `.claude/` — seus comandos e skills
+- `docs/` — contexto do projeto
+- Arquivos do projeto (src/, public/, etc.)
+
+---
 
 ## Os times
 
