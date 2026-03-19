@@ -1,61 +1,114 @@
 ---
-name: deploy
-description: Publica automaticamente — GitHub + Vercel + DNS
+nome: publicar
+descricao: Squad Deploy — Marco otimiza, Clara valida, Theo autoriza
 ---
 
 # /publicar
 
-Leia tokens do `.env`: `GITHUB_TOKEN` e `VERCEL_TOKEN`.
-Se ausentes, instrua onde gerar e pare — nunca peça no chat.
+## INICIALIZAÇÃO
 
-## PASSO 1 — Perguntas
+Leia os 3 agentes do Squad Deploy:
+- `.claude/times/deploy/marco.md` (Executor)
+- `.claude/times/deploy/clara.md` (Revisora)
+- `.claude/times/deploy/theo.md` (Supervisor)
 
 ```
-1. Nome do repositório: (ex: protocolo-s1)
-2. Domínio: (ex: protocolo-s1.com.br — ou Enter para pular)
+╔══════════════════════════════════════════════╗
+║  ⚡ LP WIZARD — SQUAD DEPLOY                 ║
+║  🚀 Marco · Clara · Theo                     ║
+╚══════════════════════════════════════════════╝
 ```
 
-## PASSO 2 — GitHub
+Verifique tokens no `.env`: `GITHUB_TOKEN` e `VERCEL_TOKEN`.
+Se ausentes, instrua onde gerar e pare.
+
+---
+
+## PASSO 1 — OTIMIZAÇÃO
+
+```
+⚡ Marco: Otimizando performance...
+  ▶ Imagens: convertendo para WebP
+  ▶ CSS: removendo não utilizado
+  ▶ JS: lazy loading
+  ✅ LCP: {tempo}s
+```
+
+---
+
+## PASSO 2 — VALIDAÇÃO
+
+```
+🔍 Clara: Validando build...
+  ▶ Build: {status}
+  ▶ Responsivo: {status}
+  ▶ Links: {status}
+  ✅ Tudo funcionando
+```
+
+---
+
+## PASSO 3 — AUTORIZAÇÃO
+
+```
+✅ Theo: Auditoria de 7 dimensões:
+  ▶ Copy: ✓
+  ▶ UI: ✓
+  ▶ Performance: ✓
+  ▶ Funil: ✓
+  ▶ Tracking: ✓
+  ▶ Segurança: ✓
+  ▶ Oportunidades: {N} encontradas
+  
+  Pronto para deploy. Autoriza? (s/n)
+```
+
+---
+
+## PASSO 4 — DEPLOY
+
+```
+🚀 Marco: Publicando...
+```
+
+### GitHub
 
 ```bash
 curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
   https://api.github.com/user/repos \
   -d '{"name":"{repo_name}","private":true}'
-git remote remove origin 2>/dev/null; \
 git remote add origin "https://$GITHUB_TOKEN@github.com/{user}/{repo_name}.git"
-git branch -M main && git push -u origin main
+git push -u origin main
 ```
 
-## PASSO 3 — Vercel
+### Vercel
 
 ```bash
 curl -s -X POST -H "Authorization: Bearer $VERCEL_TOKEN" \
   https://api.vercel.com/v1/projects \
-  -d '{"name":"{repo_name}","framework":"astro","gitRepository":{"type":"github","repo":"{user}/{repo_name}"}}'
+  -d '{"name":"{repo_name}","framework":"astro"}'
 ```
 
-Aguarde deploy. Informe URL: `https://{repo_name}.vercel.app`
+### Domínio (se informado)
 
-## PASSO 4 — Domínio (se informado)
-
-```bash
-curl -s -X POST -H "Authorization: Bearer $VERCEL_TOKEN" \
-  https://api.vercel.com/v9/projects/$PROJECT_ID/domains \
-  -d '{"name":"{domain}"}'
-```
-
-Salve em `docs/dns-records.txt` (já no .gitignore):
+Salve DNS em `docs/dns-records.txt`:
 ```
 A       @      76.76.21.21
 CNAME   www    cname.vercel-dns.com
 ```
 
+---
+
 ## RESULTADO
 
 ```
-✅ GitHub: github.com/{user}/{repo_name}
-✅ URL: https://{repo_name}.vercel.app
-✅ DNS: docs/dns-records.txt
+╔══════════════════════════════════════════════╗
+║  ✅ DEPLOY CONCLUÍDO                         ║
+╠══════════════════════════════════════════════╣
+║  📦 GitHub: github.com/{user}/{repo}         ║
+║  🌐 URL: https://{repo}.vercel.app           ║
+║  ⚡ LCP: {tempo}s                            ║
+╠══════════════════════════════════════════════╣
+║  ✅ Theo: {avaliação final}                  ║
+╚══════════════════════════════════════════════╝
 ```
-
-Rode `/auditar` para revisão final.

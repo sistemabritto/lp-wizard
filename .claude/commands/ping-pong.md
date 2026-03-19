@@ -1,7 +1,7 @@
 ---
 nome: ping-pong
-descricao: Entrevista estratégica — Geraldo e Vera conduzem, PRD + contexto-projeto + plano gerados ao final
-carrega: [.claude/times/gerenciamento/geraldo.md, .claude/times/gerenciamento/vera.md]
+descricao: Entrevista estratégica — Squad Descoberta conduz, PRD + contexto + plano gerados ao final
+carrega: [.claude/times/descoberta/david.md, .claude/times/descoberta/gary.md, .claude/times/descoberta/claude.md]
 saida: [docs/PRD.md, docs/contexto-projeto.md, docs/PLANO.md]
 ---
 
@@ -9,16 +9,18 @@ saida: [docs/PRD.md, docs/contexto-projeto.md, docs/PLANO.md]
 
 ## INICIALIZAÇÃO
 
-Leia `.claude/times/gerenciamento/geraldo.md` e `.claude/times/gerenciamento/vera.md` completamente.
-Encarne ambos durante toda a sessão.
+Leia os 3 agentes do Squad Descoberta:
+- `.claude/times/descoberta/david.md` (Executor)
+- `.claude/times/descoberta/gary.md` (Revisor)
+- `.claude/times/descoberta/claude.md` (Supervisor)
 
 ```
 ╔══════════════════════════════════════════════╗
-║  ⚡ PROTOCOLO S1 ▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░  ║
-║  SISTEMA DE CONSTRUÇÃO DE OFERTAS v7.0       ║
+║  ⚡ LP WIZARD ▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░      ║
+║  SQUAD DESCOBERTA                           ║
 ╚══════════════════════════════════════════════╝
 
-👑 Geraldo: Antes de começar, separa:
+🔍 David: Antes de começar, separa:
 
   ⚡ Sua foto (quadrada, rosto visível)
   ⚡ Print do seu melhor resultado
@@ -31,16 +33,16 @@ Encarne ambos durante toda a sessão.
 ```
 
 Se `docs/PRD.md` existe com `status: approved`:
-`👑 Geraldo: Sessão anterior encontrada. Sobrescrever? (s/n)`
+`🔍 David: Sessão anterior encontrada. Sobrescrever? (s/n)`
 
 ---
 
 ## REGRAS
 - 🛑 UMA pergunta por vez
 - 🧠 Autocomplete quando resposta cobre campos futuros
-- 👸 Vera entra nas perguntas estratégicas para expandir e consolidar
+- 🎯 Gary questiona respostas vagas
+- ✅ Claude valida alinhamento estratégico
 - 📝 Ao final: atualiza `docs/contexto-projeto.md`, gera `docs/PRD.md` e `docs/PLANO.md`
-- 🔄 Qualquer mudança estrutural no contexto-projeto.md propõe antes de salvar
 
 ---
 
@@ -48,21 +50,26 @@ Se `docs/PRD.md` existe com `status: approved`:
 
 ```
 ╔══════════════════════════════════════════════╗
-║  ⚡ S1  ░  {N}/18  ░  {BLOCO}  ░  ~{X}min  ║
-║  {▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░}  {%}%    ║
+║  ⚡ LPW  ░  {N}/18  ░  {BLOCO}  ░  ~{X}min   ║
+║  {▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░}  {%}%     ║
 ╚══════════════════════════════════════════════╝
 
-👑 Geraldo: {pergunta}
+🔍 David: {pergunta}
 ```
 
-Vera entra quando estratégico:
+Gary questiona quando necessário:
 ```
-👸 Vera: {expansão + pergunta complementar se necessário}
+🎯 Gary: {questionamento}
+```
+
+Claude valida:
+```
+✅ Claude: {confirmação ou ajuste}
 ```
 
 Transição:
 ```
-👑 Geraldo: Entendido — {resumo em 1 linha}. Próxima:
+🔍 David: Entendido — {resumo em 1 linha}. Próxima:
 ```
 
 ---
@@ -71,7 +78,6 @@ Transição:
 
 **P1:** `Qual é o seu nome e como você se apresentaria em 2 frases num story?`
 → `autor_nome` + `sobre_voce`
-*Vera se bio for vaga ou muito formal.*
 
 **P2:** `📸 Manda sua foto. (ou "não tenho")`
 → `public/images/foto-autor.jpg`
@@ -85,7 +91,7 @@ Transição:
 
 **P4:** `Nome da oferta e em UMA frase — o que a pessoa consegue fazer depois de comprar?`
 → `nome_produto` + `transformacao`
-*Vera sempre aqui — analisa se a transformação é específica e verificável.*
+*Gary sempre aqui — questiona se vago.*
 
 **P5:** `Entregáveis e bônus — uma linha cada.`
 → `entregaveis` + `bonus`
@@ -99,7 +105,7 @@ Transição:
 
 **P7:**
 ```
-👑 Geraldo: Como o comprador vai pagar?
+🔍 David: Como o comprador vai pagar?
   1️⃣  Link de checkout
   2️⃣  WhatsApp (número)
   3️⃣  Formulário
@@ -108,12 +114,12 @@ Transição:
 
 **P8:**
 ```
-👑 Geraldo: Tipo de escassez?
+🔍 David: Tipo de escassez?
   1️⃣  🔢 Lote   2️⃣  ⏰ Tempo
   3️⃣  📦 Estoque  4️⃣  📅 Agenda  5️⃣  🚫 Sem
 ```
 → `escassez_tipo` + `escassez_valor`
-*Vera sempre aqui — avalia credibilidade da escassez.*
+*Claude avalia credibilidade.*
 
 ---
 
@@ -121,11 +127,10 @@ Transição:
 
 **P9:** `Comprador ideal, o que quer resolver AGORA, e como está se sentindo?`
 → `publico_comprador` + `demanda_urgente` + `estado_emocional`
-*Vera sempre aqui — avatar vago = copy genérica.*
+*Gary se avatar vago.*
 
 **P10:** `O que acontece se NÃO resolver? E as 3 maiores vantagens de quem compra?`
 → `custo_inacao` + `vantagens_compra`
-*Vera se custo da inação for fraco.*
 
 ---
 
@@ -133,7 +138,6 @@ Transição:
 
 **P11:** `Resultado concreto para mostrar? Números, antes/depois.`
 → `prova_resultado`
-*Vera se não tiver prova — sugere alternativas.*
 
 **P12:** `📸 Tem prints? (até 5 — ou "não tenho")`
 → `public/images/prova-0{N}.jpg`
@@ -142,12 +146,8 @@ Transição:
 
 ## BLOCO 6 — VISUAL [P13-P14]
 
-**P13:** Geraldo e Vera recomendam juntos com base no produto:
-```
-👑 Geraldo + 👸 Vera: → Estilo {N}: {nome} — {motivo}
-Confirma? (s) ou: 1⚡Dark  2🧠Clean  3👑Premium  4🔥Colorido
-```
-→ `estilo_visual`
+**P13:** `Paleta de cores preferida? (ou deixa o squad sugerir)`
+→ `paleta_cores`
 
 **P14:** `Quer barra de CTA fixa no topo ao rolar? (+~12% conversão) (s/n)`
 → `sticky_cta`
@@ -158,7 +158,6 @@ Confirma? (s) ou: 1⚡Dark  2🧠Clean  3👑Premium  4🔥Colorido
 
 **P15:** `Algo do produto que faz o comprador pensar "como assim isso existe?"`
 → `parte_provocante`
-*Vera se revelar demais.*
 
 **P16:** `Algo que só quem compra descobre? Sem revelar tudo.`
 → `parte_misteriosa`
@@ -169,7 +168,7 @@ Confirma? (s) ou: 1⚡Dark  2🧠Clean  3👑Premium  4🔥Colorido
 
 **P17:**
 ```
-👑 Geraldo: Para publicar automaticamente, adicione ao .env:
+🔍 David: Para publicar automaticamente, adicione ao .env:
   GITHUB_TOKEN=  VERCEL_TOKEN=
 Já adicionou? (s/n)
 ```
@@ -184,38 +183,33 @@ Já adicionou? (s/n)
 ```
 ╔══════════════════════════════════════════════╗
 ║  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  100% ✓   ║
-║  👑 Geraldo: Processando...                 ║
+║  🔍 David: Processando...                    ║
 ╚══════════════════════════════════════════════╝
 ```
 
 ### 1. Atualizar docs/contexto-projeto.md
-Preencha com todos os dados coletados.
-**Se mexer em campos que já existiam:** informe o que vai mudar e aguarde autorização.
 
 ### 2. Preencher .env automaticamente
 
 ### 3. Gerar docs/PRD.md (status: approved)
 
-### 4. Gerar docs/PLANO.md com 7 épicos
+### 4. Gerar docs/PLANO.md com épicas
 
-### 5. Favicon SVG com iniciais na paleta do estilo
+### 5. Favicon SVG com iniciais
 
-### 6. Páginas legais
-
-### 7. Resumo final:
+### 6. Resumo final:
 
 ```
 ╔══════════════════════════════════════════════╗
-║  ✅ SESSÃO CONCLUÍDA                         ║
+║  ✅ DESCOBERTA CONCLUÍDA                     ║
 ╠══════════════════════════════════════════════╣
 ║  📋 PRD + contexto + plano    ✓              ║
 ║  🖼️  Imagens: {N} salvas      ✓              ║
 ║  ⚙️  .env preenchido          ✓              ║
 ╠══════════════════════════════════════════════╣
-║  👸 Vera: Oferta {forte/média/fraca}         ║
-║     {observação em 1 linha}                  ║
+║  ✅ Claude: {avaliação em 1 linha}           ║
 ╠══════════════════════════════════════════════╣
 ║  ⚡ PRÓXIMO: /escrever-copy                  ║
-║  👑 Geraldo: ~20 min. Vamos. ⚡              ║
+║  🔍 David: ~20 min. Vamos. ⚡                ║
 ╚══════════════════════════════════════════════╝
 ```

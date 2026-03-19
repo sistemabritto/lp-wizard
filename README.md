@@ -1,14 +1,13 @@
 <div align="center">
 
-# ⚡ LP Wizard — Protocolo S1
+# ⚡ LP Wizard
 
 **Um time de agentes de IA constrói sua página de vendas do zero.**
 
-Copy, imagens, design e performance — tudo em menos de 1 hora.
+Copy · Imagens · Design · Performance — em menos de 1 hora.
 
 <br>
 
-[![Versão](https://img.shields.io/badge/versão-7.1-00FF87?style=for-the-badge&labelColor=0A0A0A)](https://github.com/sistemabritto/lp-wizard)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-✓-00FF87?style=for-the-badge&labelColor=0A0A0A)](https://claude.ai/code)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-✓-FF6B35?style=for-the-badge&labelColor=0A0A0A)](https://openclaw.ai)
 [![Antigravity](https://img.shields.io/badge/Antigravity-✓-4285F4?style=for-the-badge&labelColor=0A0A0A)](https://antigravity.dev)
@@ -22,218 +21,181 @@ Copy, imagens, design e performance — tudo em menos de 1 hora.
 
 ---
 
-## 🎯 O que é isso?
-
-Imagine ter um **time de especialistas em marketing** trabalhando no seu projeto — um copywriter, um designer, um especialista em performance — todos debatendo, votando e construindo juntos.
-
-Agora imagine que esse time funciona 24/7, não cansa, e você paga só o custo da API.
-
-**Isso é o LP Wizard.**
-
-Você instala uma vez, usa para sempre. Cada etapa tem agentes especializados que:
-- 🗣️ Debater entre si
-- 🗳️ Votam nas melhores decisões
-- ✅ Só avançam com aprovação
-
-Você participa das decisões estratégicas. O resto é automático.
-
----
-
-## 🚀 Começando (é só 3 passos)
-
-### Passo 1: Clone o projeto
+## 🚀 Instalação (uma linha)
 
 ```bash
-git clone https://github.com/sistemabritto/lp-wizard.git
-cd lp-wizard
+curl -fsSL https://raw.githubusercontent.com/sistemabritto/lp-wizard/main/install.sh | bash
 ```
 
-### Passo 2: Instale as dependências
+Pronto. O script detecta seu CLI, clona o projeto e configura tudo.
 
-```bash
-bash install.sh          # detecta seu CLI automaticamente
-cp .env.example .env     # copia o arquivo de configuração
-npm install              # instala as dependências
-```
-
-### Passo 3: Inicie a mágica
-
-Abra o Claude Code (ou seu CLI preferido) na pasta do projeto e digite:
+Depois é só abrir a pasta no **Claude Code** e digitar:
 
 ```
 /ping-pong
 ```
 
-É isso. O **Geraldo** (PM Pitbull) e a **Vera** (Estrategista) vão te guiar pelo resto. 🎪
+---
+
+## 🎯 O que é isso?
+
+Um time de agentes especializados que:
+
+- 🗣️ **Debatem** entre si antes de decidir
+- 🗳️ **Votam** nas melhores opções
+- ✅ **Só avançam** com aprovação sua
+
+Você participa das decisões estratégicas. O resto acontece automaticamente.
 
 ---
 
 ## 🧠 Por que funciona?
 
-### Performance que converte
+### Performance
 
-Cada segundo a mais no carregamento custa entre **7% e 20%** da conversão.
+Cada segundo extra no carregamento mata **7-20%** da conversão.
 
-Página lenta = CPM alto = CAC inviável = campanha morre.
+O LP Wizard constrói páginas que carregam em **menos de 1 segundo** — sem sacrificar design.
 
-O LP Wizard constrói páginas que carregam em **menos de 1 segundo** — sem sacrificar o design.
+### Persuasão
 
-### Copy que persuade
-
-O sistema usa um framework testado que ativa os três cérebros do comprador na ordem certa:
+Framework testado que ativa os três cérebros do comprador na ordem certa:
 
 1. **Reptiliano** → "Isso é urgente?"
-2. **Límbico** → "Isso é importante pra mim?"
-3. **Neocórtex** → "Isso faz sentido?"
-
-Do headline ao CTA, cada palavra é debatida por 3 agentes antes de ir para a página.
+2. **Límbico** → "Isso importa pra mim?"
+3. **Neocórtex** → "Faz sentido?"
 
 ---
 
-## 👥 Conheça o time
+## 👥 Os Squads
 
-### 👑 Gerenciamento
+Cada etapa tem um **Executor**, um **Revisor** e um **Supervisor**.
 
-| Agente | Papel | O que faz |
-|---|---|---|
-| **Geraldo** | PM Pitbull | Conduz a entrevista, monitora o ritmo, aprova o deploy |
-| **Vera** | Estrategista | Expande contexto, veta o que não converte |
+### 🔍 Squad Descoberta
 
-> Geraldo e Vera supervisionam todas as etapas. Ambos podem vetar. Você desempata.
-
-### ✍️ Time de Copy
-
-| Agente | Foco | Pergunta-chave |
-|---|---|---|
-| **Léo** | Impacto emocional, ousadia | "Para o scroll e cria desejo?" |
-| **Raquel** | PNL, gatilhos mentais | "Ativa os 3 cérebros na ordem certa?" |
-| **Beto** | Voz do avatar, autenticidade | "Meu vizinho entenderia?" |
-
-### 🎨 Time de Design
-
-| Agente | Foco |
+| Agente | Papel |
 |---|---|
-| **Caio** | Executor — constrói story por story |
-| **Nina** | Criativa — diferenciação visual |
-| **Fabi** | Conversão/UX — CTAs, mobile, contraste |
+| **David** | Executor — faz as perguntas certas |
+| **Gary** | Revisor — questiona o que está faltando |
+| **Claude** | Supervisor — garante alinhamento estratégico |
 
-### ⚡ Time de Performance
+### ✍️ Squad Conteúdo
 
-| Agente | Foco |
+| Agente | Papel |
 |---|---|
-| **Duda** | Executa correções e reporta |
-| **Rafa** | Analisa problemas e impacto |
-| **Íris** | Preserva o visual durante otimizações |
+| **John** | Executor — escreve com impacto |
+| **Gene** | Revisor — refina a persuasão |
+| **Robert** | Supervisor — aprova ou manda refazer |
 
-### 🔍 Time de Análise
+### 🔨 Squad Construção
 
-| Agente | Foco |
+| Agente | Papel |
 |---|---|
-| **Marco** | Mapeia tudo sem interpretar |
-| **Clara** | Examina estado de cada item |
-| **Theo** | Caça inconsistências |
+| **Pierre** | Executor — constroi componente a componente |
+| **Lina** | Revisora — audita visual e UX |
+| **Heloísa** | Supervisora — garante conversão |
+
+### 🚀 Squad Deploy
+
+| Agente | Papel |
+|---|---|
+| **Marco** | Executor — aplica otimizações |
+| **Clara** | Revisora — valida performance |
+| **Theo** | Supervisor — autoriza o deploy |
 
 ---
 
-## 🔄 O fluxo completo
+## 🔄 O Fluxo
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  FASE 1 — ASSETS                                        │
-│                                                         │
-│  /ping-pong      →  Entrevista estratégica (15 min)    │
-│  /escrever-copy  →  3 agentes debatem e votam (20 min) │
-│  /gerar-imagens  →  Loop de aprovação visual (10 min)  │
-└────────────────────────┬────────────────────────────────┘
-                         ↓
-┌─────────────────────────────────────────────────────────┐
-│  FASE 2 — CONSTRUÇÃO                                    │
-│                                                         │
-│  /construir    →  Constrói com assets prontos          │
-│  /refinar-ui   →  Auditoria visual e contraste         │
-│  /otimizar     →  Performance GTmetrix A               │
-│  /auditar      →  7 dimensões pré-deploy               │
-│  /publicar     →  GitHub + Vercel + DNS                │
-└─────────────────────────────────────────────────────────┘
+/ping-pong ──→ /escrever-copy ──→ /gerar-imagens ──→ /construir ──→ /publicar
+     │               │                  │                │            │
+   15 min          20 min            10 min           15 min        5 min
 ```
 
-**A qualquer momento:** `/retomar` para ver onde você está e continuar.
+**A qualquer momento:** `/retomar` para ver onde está e continuar.
 
 ---
 
-## 📋 Os 10 comandos
+## 📋 Comandos
 
-| Comando | O que faz | Tempo |
-|---|---|---|
-| `/ping-pong` | Geraldo e Vera conduzem 18 perguntas → PRD + plano | ~15 min |
-| `/escrever-copy` | Léo, Raquel, Beto debatem 15 seções | ~20 min |
-| `/gerar-imagens` | Geração com aprovação visual | ~10 min |
-| `/construir` | Caio, Nina, Fabi constroem a página | ~15 min |
-| `/refinar-ui` | Auditoria visual e contraste | — |
-| `/otimizar` | Performance até GTmetrix A | — |
-| `/auditar` | 7 dimensões + veredicto final | — |
-| `/publicar` | Deploy automático | — |
-| `/retomar` | Estado do projeto + continuar | < 2 min |
-| `/depurar` | Corrige erros de build | — |
+| Comando | O que faz |
+|---|---|
+| `/ping-pong` | Entrevista estratégica → PRD + plano |
+| `/escrever-copy` | Copy debatida e aprovada por 3 agentes |
+| `/gerar-imagens` | Imagens via Gemini (gratuito) |
+| `/construir` | Construção componente a componente |
+| `/publicar` | GitHub + Vercel + DNS automático |
+| `/retomar` | Continua de onde parou |
+| `/auditar` | Auditoria completa pré-deploy |
 
 ---
 
-## 🔌 Compatibilidade Multi-CLI
+## 🎨 Design
 
-O LP Wizard funciona com **qualquer um desses**:
+Não usamos templates prontos.
 
-| CLI | Status | Configuração |
-|---|---|---|
-| **Claude Code** | ✅ Nativo | Zero configuração |
-| **OpenClaw** | ✅ Suportado | `SOUL.md` + `.openclaw/` |
-| **Antigravity** | ✅ Suportado | `.agent/skills/` |
-| **Cursor** | ✅ Suportado | `.cursor/skills/` |
-| **Windsurf** | ✅ Suportado | `.cursor/skills/` |
-
-O `install.sh` detecta automaticamente qual CLI você está usando e configura tudo.
+O design é **gerado do zero** baseado na sua copy, produto e avatar — 100% personalizado para cada projeto.
 
 ---
 
-## 🎨 Estilos visuais disponíveis
+## 🖼️ Imagens (Grátis)
 
-| | Estilo | Ideal para |
-|---|---|---|
-| ⚡ | **Dark Urgência** | Tráfego, performance, resultados |
-| 🧠 | **Clean Claro** | Educação, saúde, consultoria |
-| 👑 | **Premium Escuro** | High ticket, exclusividade |
-| 🔥 | **Colorido Energético** | Lifestyle, entretenimento |
+**Gemini API** gera suas imagens sem custo:
 
-O sistema sugere automaticamente o mais adequado para seu produto.
+| Modelo | Ideal para |
+|---|---|
+| `imagen-4-preview` | ⭐ Padrão — qualidade alta |
+| `gemini-2.5-flash-preview` | Rápido, bom para testes |
 
----
+Configure sua chave do Google AI no `.env`:
 
-## 💰 Custos de imagem
+```
+GOOGLE_API_KEY=sua_chave_aqui
+```
 
-| Modelo | Custo aproximado | Quando usar |
-|---|---|---|
-| `flux-2-klein` | ~R$0,08/img | Testes, volume |
-| `seedream-4.5` | ~R$0,23/img | ⭐ Padrão |
-| `gemini-flash-image` | ~R$0,39/img | Texto na imagem |
-| `gemini-pro-image` | ~R$0,78/img | Qualidade máxima |
-
-Configure no `.env`. Análise visual gratuita via Gemini.
+**Como conseguir gratuitamente:**
+1. Acesse [aistudio.google.com](https://aistudio.google.com)
+2. Clique em "Get API Key"
+3. Cole no `.env`
 
 ---
 
-## ⚙️ Variáveis de ambiente
+## ⚙️ Configuração mínima
 
-O `/ping-pong` preenche a maioria. As que você precisa configurar:
+Só duas variáveis obrigatórias no `.env`:
 
 | Variável | Para que serve |
 |---|---|
-| `PUBLIC_CHECKOUT_URL` | Link de pagamento, WhatsApp ou formulário |
-| `OPENROUTER_API_KEY` | Geração de imagens |
-| `GITHUB_TOKEN` | Deploy automático (opcional) |
-| `VERCEL_TOKEN` | Deploy automático (opcional) |
+| `GOOGLE_API_KEY` | Geração de imagens (grátis) |
+| `CHECKOUT_URL` | Link de pagamento, WhatsApp ou formulário |
+
+**Opcionais para deploy automático:**
+
+| Variável | Para que serve |
+|---|---|
+| `GITHUB_TOKEN` | Criar repositório automaticamente |
+| `VERCEL_TOKEN` | Deploy na Vercel |
 
 ---
 
-## 🤝 Quem está por trás
+## 🔌 Compatibilidade
+
+Funciona com qualquer um desses CLIs:
+
+| CLI | Status |
+|---|---|
+| Claude Code | ✅ Nativo |
+| OpenClaw | ✅ Suportado |
+| Antigravity | ✅ Suportado |
+| Cursor | ✅ Suportado |
+| Windsurf | ✅ Suportado |
+
+O script de instalação detecta automaticamente.
+
+---
+
+## 👤 Autor
 
 <div align="center">
 
@@ -241,7 +203,7 @@ O `/ping-pong` preenche a maioria. As que você precisa configurar:
 
 No mercado digital desde 2014.
 
-Mais de R$500k rodados em anúncios · 20+ nichos · múltiplos 7 dígitos.
+R$500k+ em anúncios · 20+ nichos · múltiplos 7 dígitos
 
 <br>
 
@@ -252,22 +214,9 @@ Mais de R$500k rodados em anúncios · 20+ nichos · múltiplos 7 dígitos.
 
 ---
 
-## 📜 Versão atual — v7.1
-
-- ✅ Times organizados em `.claude/times/`
-- ✅ Skills genéricas — servem para qualquer projeto
-- ✅ `docs/contexto-projeto.md` — dados separados das skills
-- ✅ Compatibilidade multi-CLI
-- ✅ Fluxo unificado: assets → construção
-- ✅ Auditoria com 7 dimensões
-
----
-
 <div align="center">
 
-**Clone → Instale → /ping-pong**
-
-Sua próxima página de vendas está a um comando de distância.
+**Clone → Abra → /ping-pong**
 
 <br>
 
