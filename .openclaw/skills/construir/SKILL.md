@@ -1,90 +1,34 @@
 ---
 name: construir
-description: |
-  Time de design constrói a landing page story por story.
-  Caio, Nina e Fabi trabalham juntos — sem regressão.
-version: "1.0"
-author: LP Wizard
-tags:
-  - construcao
-  - design
-  - implementacao
-triggers:
-  - /construir
-  - construir pagina
-  - montar landing
+description: Squad Construção cria a página
 ---
 
-# /construir — Construção da Landing Page
+# /construir
 
-## Agentes Envolvidos
+Squad: **Construção** (Pierre + Lina + Heloísa)
 
-- **Caio** — Executor (constrói story por story)
-- **Nina** — Criativa (diferenciação visual)
-- **Fabi** — Conversão/UX (CTA, mobile, contraste)
+## Fluxo
 
----
+1. Pierre constrói componente a componente
+2. Lina audita visual
+3. Heloísa garante conversão
 
-## INICIALIZAÇÃO
+## Stories
 
-```
-╔══════════════════════════════════════════════╗
-║  ⚡ PROTOCOLO S1 — CONSTRUÇÃO                ║
-║  7 épicos · 3 agentes · ~15 min              ║
-╚══════════════════════════════════════════════╝
+1. Sistema de design (variáveis CSS)
+2. Layout base
+3. Hero + Dores + Oportunidade
+4. Prova Visual + Inimigo Comum
+5. Sobre Autor + Custo Inação
+6. Três Partes + CTA Urgência
+7. Rodapé
+8. Páginas legais
+9. index.astro
+10. Sticky CTA (opcional)
 
-Requisitos:
-- docs/PRD.md aprovado
-- docs/COPY.md completo
-- Imagens em public/images/
+## Saída
 
-⚡ Pronto?
-```
+- `src/` componentes
+- `public/` assets
 
----
-
-## REGRAS
-
-- Segue docs/PLANO.md — nenhuma story pulada
-- Cada componente revisado pelo trio antes de marcar concluído
-- **Sem regressão** — avança sempre
-- Usar estrutura do estilo escolhido (Dark/Clean/Premium/Colorido)
-
----
-
-## FLUXO
-
-```
-╔══════════════════════════════════════════════╗
-║  ⚡ BUILD ▓▓▓▓▓▓░░░░░░░░░░░░░░░░  Épico {N} ║
-╚══════════════════════════════════════════════╝
-
-🔨 Caio: {story atual}
-🎨 Nina: {sugestão visual}
-📱 Fabi: {check conversão}
-
-Construindo {componente}...
-✅ Story concluída: {nome}
-```
-
----
-
-## FINALIZAÇÃO
-
-```
-╔══════════════════════════════════════════════╗
-║  ✅ CONSTRUÇÃO CONCLUÍDA                     ║
-╠══════════════════════════════════════════════╣
-║  📦 7 épicos completos       ✓               ║
-║  🎨 Estilo aplicado          ✓               ║
-║  📱 Mobile responsivo        ✓               ║
-╠══════════════════════════════════════════════╣
-║  ⚡ PRÓXIMO: /refinar-ui                     ║
-╚══════════════════════════════════════════════╝
-```
-
----
-
-## Próximo Passo
-
-Execute `/refinar-ui` para auditoria visual.
+**Próximo:** `/publicar`

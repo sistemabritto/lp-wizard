@@ -1,63 +1,28 @@
 ---
 name: retomar
-description: |
-  Mapeia estado atual do projeto.
-  Marco, Clara e Theo identificam onde você está e o que falta.
-version: "1.0"
-author: LP Wizard
-tags:
-  - status
-  - retomar
-  - continuacao
-triggers:
-  - /retomar
-  - status
-  - onde estou
+description: Mostra progresso e próximo passo
 ---
 
-# /retomar — Estado do Projeto
+# /retomar
 
-## Agentes Envolvidos
+Verifica estado do projeto e mostra onde você está.
 
-- **Marco** — Investigador (mapeia tudo)
-- **Clara** — Examinadora (analisa estado)
-- **Theo** — Caçador (inconsistências)
+## Verifica
 
----
+- `docs/PLANO.md` — progresso
+- `docs/PRD.md` — requisitos
+- `docs/COPY.md` — copy aprovada
+- `public/images/` — imagens
 
-## FLUXO
-
-```
-╔══════════════════════════════════════════════╗
-║  ⚡ PROTOCOLO S1 — RETOMAR                   ║
-║  ~2 min para saber onde está                 ║
-╚══════════════════════════════════════════════╝
-
-🔍 Marco: Mapeando arquivos...
-📋 Clara: Analisando estado de cada item...
-⚠️  Theo: Caçando inconsistências...
-```
-
----
-
-## RELATÓRIO
+## Saída
 
 ```
-╔══════════════════════════════════════════════╗
-║  📊 ESTADO DO PROJETO                        ║
-╠══════════════════════════════════════════════╣
-║  Etapa atual: {etapa}                        ║
-║  Progresso: {progresso}%                     ║
-╠══════════════════════════════════════════════╣
-║  ✅ Concluído:                               ║
-║  {lista de itens concluídos}                 ║
-╠══════════════════════════════════════════════╣
-║  ⏳ Pendente:                                ║
-║  {lista de itens pendentes}                  ║
-╠══════════════════════════════════════════════╣
-║  ⚠️  Inconsistências encontradas:            ║
-║  {lista de problemas}                        ║
-╠══════════════════════════════════════════════╣
-║  ⚡ PRÓXIMO: {próximo comando}               ║
-╚══════════════════════════════════════════════╝
+📍 ONDE VOCÊ ESTÁ
+━━━━━━━━━━━━━━━━━
+PRD: ✓ aprovado
+Copy: ✓ aprovada
+Imagens: 5 geradas
+Build: pendente
+
+⚡ PRÓXIMO: /construir
 ```

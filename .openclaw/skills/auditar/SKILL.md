@@ -1,67 +1,46 @@
 ---
 name: auditar
-description: |
-  Geraldo e Vera auditam 7 dimensões pré-deploy.
-  Veredicto final — você desempata se divergirem.
-version: "1.0"
-author: LP Wizard
-tags:
-  - auditoria
-  - validacao
-  - pre-deploy
-triggers:
-  - /auditar
-  - auditar projeto
+description: Auditoria pré-deploy 7 dimensões
 ---
 
-# /auditar — Auditoria Pré-Deploy
+# /auditar
 
-## Agentes Envolvidos
+## 7 Dimensões
 
-- **Geraldo** — PM (avalia entrega)
-- **Vera** — Estrategista (avalia conversão)
+**✍️ Copy**
+- Headline para o scroll?
+- Gatilhos ativados?
+- CTA claro?
 
----
+**🎨 UI**
+- Contraste WCAG AA?
+- Hierarquia visual?
+- Mobile 375px?
 
-## 7 DIMENSÕES
+**⚡ Performance**
+- LCP < 0.5s?
+- CLS < 0.1?
+- FID < 100ms?
 
-| # | Dimensão | Critério |
-|---|---|---|
-| 1 | Copy | Ativa 3 cérebros na ordem certa? |
-| 2 | UI | Visual converte em mobile? |
-| 3 | Performance | LCP < 1s? GTmetrix A? |
-| 4 | Funil | CTA claro? Checkout funciona? |
-| 5 | Tracking | Pixel/GTM/GA4 configurados? |
-| 6 | Segurança | .env protegido? Headers corretos? |
-| 7 | Oportunidades | O que pode melhorar? |
+**🔄 Funil**
+- CTA acima do fold?
+- Formulário mínimo?
+- Urgência visível?
 
----
+**📊 Tracking**
+- GTM instalado?
+- Pixel configurado?
+- Eventos definidos?
 
-## FLUXO
+**🔒 Segurança**
+- HTTPS?
+- Headers seguros?
+- Sem dados sensíveis?
 
-```
-╔══════════════════════════════════════════════╗
-║  ⚡ PROTOCOLO S1 — AUDITORIA                 ║
-║  7 dimensões · 2 supervisores                ║
-╚══════════════════════════════════════════════╝
+**💡 Oportunidades**
+- Melhorias identificadas
 
-👑 Geraldo: {veredicto por dimensão}
-👸 Vera: {veredicto por dimensão}
+## Resultado
 
-{Se divergirem} 👑Você desempata
-```
-
----
-
-## FINALIZAÇÃO
-
-```
-╔══════════════════════════════════════════════╗
-║  ✅ AUDITORIA CONCLUÍDA                      ║
-╠══════════════════════════════════════════════╣
-║  📋 7/7 dimensões aprovadas  ✓               ║
-║  🟢 APTO PARA DEPLOY         ✓               ║
-╠══════════════════════════════════════════════╣
-║  ⚡ PRÓXIMO: /publicar                       ║
-╚══════════════════════════════════════════════╝
-```
+- ✅ APROVADO → `/publicar`
+- ⚠️ AJUSTES → corrija primeiro

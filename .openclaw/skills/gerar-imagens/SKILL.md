@@ -1,83 +1,34 @@
 ---
 name: gerar-imagens
-description: |
-  Gera imagens via OpenRouter com aprovação visual.
-  Análise automática com visão. 3 tentativas máximo por imagem.
-version: "1.0"
-author: LP Wizard
-tags:
-  - imagens
-  - openrouter
-  - visual
-triggers:
-  - /gerar-imagens
-  - criar imagens
-  - gerar visuais
+description: Gera imagens via Gemini API (gratuito)
 ---
 
-# /gerar-imagens — Geração Visual
+# /gerar-imagens
 
-## INICIALIZAÇÃO
+## Requisito
 
-```
-╔══════════════════════════════════════════════╗
-║  ⚡ PROTOCOLO S1 — IMAGENS                   ║
-║  Geração via OpenRouter · ~10 min            ║
-╚══════════════════════════════════════════════╝
+`GOOGLE_API_KEY` no `.env`
 
-Requisitos:
-- OPENROUTER_API_KEY no .env
-- docs/COPY.md com descrições das imagens necessárias
+Obtenha grátis: [aistudio.google.com](https://aistudio.google.com)
 
-⚡ Pronto?
-```
+## Modelos
 
----
+| Modelo | Uso |
+|---|---|
+| `imagen-4-preview` | Padrão |
+| `gemini-2.5-flash-preview` | Rápido |
 
-## REGRAS
+## Imagens Geradas
 
-- Gera imagem → descreve em detalhes → pergunta se aprovado
-- **3 tentativas máximo** por imagem — nunca bloqueia o fluxo
-- Se não aprovar após 3, usa placeholder e documenta
-- Modelo padrão: `bytedance-seed/seedream-4.5`
+- `hero-bg.webp` — fundo hero
+- `produto.webp` — produto
+- `autor.webp` — autor
+- `prova-1.webp` até `prova-5.webp` — prints
 
----
+## Fluxo
 
-## FLUXO
+1. Gera com base na copy
+2. Mostra resultado
+3. Aprova ou regenera (máx 3 tentativas)
 
-```
-╔══════════════════════════════════════════════╗
-║  ⚡ IMAGENS ▓▓▓▓▓▓░░░░░░░░░░░░░░░░  {N}/{T} ║
-╚══════════════════════════════════════════════╝
-
-🖼️ Imagem: {nome}
-
-Prompt: {prompt baseado na copy}
-
-[Tentativa 1/3]
-🎨 Gerando... 
-📊 Análise: {descrição detalhada da imagem gerada}
-
-✅ Aprovado? (s/n/ajustar)
-```
-
----
-
-## FINALIZAÇÃO
-
-```
-╔══════════════════════════════════════════════╗
-║  ✅ IMAGENS CONCLUÍDAS                       ║
-╠══════════════════════════════════════════════╣
-║  🖼️  {N} imagens geradas     ✓               ║
-║  📁 public/images/           ✓               ║
-╠══════════════════════════════════════════════╣
-║  ⚡ PRÓXIMO: /construir                      ║
-╚══════════════════════════════════════════════╝
-```
-
----
-
-## Próximo Passo
-
-Execute `/construir` para montar a landing page.
+**Próximo:** `/construir`

@@ -1,58 +1,42 @@
 ---
 name: publicar
-description: |
-  Deploy automático: GitHub + Vercel + DNS.
-  Requer GITHUB_TOKEN e VERCEL_TOKEN no .env.
-version: "1.0"
-author: LP Wizard
-tags:
-  - deploy
-  - publicacao
-  - vercel
-triggers:
-  - /publicar
-  - publicar pagina
-  - deploy
+description: Squad Deploy otimiza e publica
 ---
 
-# /publicar — Deploy Automático
+# /publicar
 
-## REQUISITOS
+Squad: **Deploy** (Marco + Clara + Theo)
 
-```
-.env:
-  GITHUB_TOKEN=ghp_xxx
-  VERCEL_TOKEN=xxx
-```
+## Fluxo
 
----
+1. Marco otimiza performance
+2. Clara valida build
+3. Theo autoriza deploy
 
-## FLUXO
+## Passos
 
-```
-╔══════════════════════════════════════════════╗
-║  ⚡ PROTOCOLO S1 — PUBLICAÇÃO                ║
-╚══════════════════════════════════════════════╝
+1. **Otimização** — imagens WebP, CSS/JS minificado
+2. **Validação** — build, responsivo, links
+3. **Autorização** — auditoria 7 dimensões
+4. **Deploy** — GitHub + Vercel + DNS
 
-☐ Criar repositório GitHub
-☐ Push do código
-☐ Deploy Vercel
-☐ Configurar domínio (se tiver)
-☐ Salvar DNS em docs/dns-records.txt
-```
+## 7 Dimensões
 
----
+- Copy
+- UI
+- Performance
+- Funil
+- Tracking
+- Segurança
+- Oportunidades
 
-## FINALIZAÇÃO
+## Requisitos
 
-```
-╔══════════════════════════════════════════════╗
-║  ✅ DEPLOY CONCLUÍDO                         ║
-╠══════════════════════════════════════════════╣
-║  🔗 URL: {url}               ✓               ║
-║  🌐 Domínio: {domain}        ✓               ║
-║  📋 DNS salvo em docs/       ✓               ║
-╠══════════════════════════════════════════════╣
-║  🎉 Landing page no ar!                      ║
-╚══════════════════════════════════════════════╝
-```
+- `GITHUB_TOKEN` no .env
+- `VERCEL_TOKEN` no .env
+
+## Saída
+
+- Repositório GitHub
+- URL Vercel
+- DNS configurado
