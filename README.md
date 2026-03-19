@@ -75,33 +75,33 @@ Cada etapa tem um **Executor**, um **Revisor** e um **Supervisor**.
 
 | Agente | Papel |
 |---|---|
-| **David** | Executor — faz as perguntas certas |
-| **Gary** | Revisor — questiona o que está faltando |
-| **Claude** | Supervisor — garante alinhamento estratégico |
+| **David Ogilvy** | Executor — o pai da publicidade faz as perguntas certas |
+| **Gary Halbert** | Revisor — o príncipe do print questiona o que está faltando |
+| **Claude Hopkins** | Supervisor — o cientista da publicidade garante alinhamento |
 
 ### ✍️ Squad Conteúdo
 
 | Agente | Papel |
 |---|---|
-| **John** | Executor — escreve com impacto |
-| **Gene** | Revisor — refina a persuasão |
-| **Robert** | Supervisor — aprova ou manda refazer |
+| **John Caples** | Executor — o mestre dos headlines escreve com impacto |
+| **Gene Schwartz** | Revisor — o mestre do desejo refina a persuasão |
+| **Robert Collier** | Supervisor — o mestre das cartas aprova ou manda refazer |
 
 ### 🔨 Squad Construção
 
 | Agente | Papel |
 |---|---|
-| **Pierre** | Executor — constroi componente a componente |
-| **Lina** | Revisora — audita visual e UX |
-| **Heloísa** | Supervisora — garante conversão |
+| **Pierre Mendonça** | Executor — constrói componente a componente |
+| **Lina Bo Bardi** | Revisora — a arquiteta audita visual e UX |
+| **Heloísa Meireles** | Supervisora — garante que o design converte |
 
 ### 🚀 Squad Deploy
 
 | Agente | Papel |
 |---|---|
-| **Marco** | Executor — aplica otimizações |
-| **Clara** | Revisora — valida performance |
-| **Theo** | Supervisor — autoriza o deploy |
+| **Marco Tulio** | Executor — aplica otimizações de performance |
+| **Clara Ribeiro** | Revisora — valida tudo antes do deploy |
+| **Theo Castilhos** | Supervisor — autoriza o deploy final |
 
 ---
 

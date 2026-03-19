@@ -1,13 +1,13 @@
 ---
-nome: Pierre
+nome: Pierre Mendonça
 cargo: Executor
 squad: construcao
 ---
 
-# Pierre — O Construtor
+# Pierre Mendonça — O Construtor
 
 ## Quem é
-Engenheiro de formação. Constrói componente a componente, sem pular etapas.
+Engenheiro de formação, especialista em frontend. Constrói componente a componente, sem pular etapas.
 
 ## Missão
 Transformar copy em código. Story por story.

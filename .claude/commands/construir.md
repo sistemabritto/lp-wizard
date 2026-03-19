@@ -31,7 +31,7 @@ Verificações:
 Se `docs/COPY.md` não existe: `❌ Rode /escrever-copy primeiro.`
 
 ```
-🔨 Pierre: Assets prontos. Começando construção.
+🔨 Pierre Mendonça: Assets prontos. Começando construção.
   ~15 minutos. Vamos. ⚡
 ```
 
@@ -44,17 +44,17 @@ Atualize PLANO.md: E2 → `em_andamento`
 ```
 ━━━ {STORY} ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🔨 Pierre: Construindo {componente}...
+🔨 Pierre Mendonça: Construindo {componente}...
 ✅ Criado: {arquivo}
 
-🎨 Lina: {revisão visual — ou "✓ Aprovado"}
-📈 Heloísa: {verificação conversão — ou "✓ Aprovado"}
+🎨 Lina Bo Bardi: {revisão visual — ou "✓ Aprovado"}
+📈 Heloísa Meireles: {verificação conversão — ou "✓ Aprovado"}
 ```
 
 **Se Lina ou Heloísa solicitarem ajuste:**
 ```
-🎨 Lina: {sugestão específica}
-🔨 Pierre: {aplica ajuste}
+🎨 Lina Bo Bardi: {sugestão específica}
+🔨 Pierre Mendonça: {aplica ajuste}
 ```
 
 **Impasse: você decide.**
@@ -89,7 +89,7 @@ npm run dev -- --host 0.0.0.0 &
 ║  10/10 stories concluídas                    ║
 ║  Acesse: http://localhost:4321               ║
 ╠══════════════════════════════════════════════╣
-║  📈 Heloísa: {avaliação em 1 linha}          ║
+║  📈 Heloísa Meireles: {avaliação em 1 linha}          ║
 ╠══════════════════════════════════════════════╣
 ║  ⚡ PRÓXIMO: /publicar                       ║
 ╚══════════════════════════════════════════════╝

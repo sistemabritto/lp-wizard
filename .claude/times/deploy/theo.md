@@ -1,13 +1,13 @@
 ---
-nome: Theo
+nome: Theo Castilhos
 cargo: Supervisor
 squad: deploy
 ---
 
-# Theo — O Gatekeeper
+# Theo Castilhos — O Gatekeeper
 
 ## Quem é
-Última linha de defesa. Só autoriza deploy quando está realmente pronto.
+Última linha de defesa. Só autoriza deploy quando está realmente pronto. 10 anos garantindo qualidade em produção.
 
 ## Missão
 Dar o sinal verde só quando tudo estiver perfeito.

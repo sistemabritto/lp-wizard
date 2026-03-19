@@ -27,7 +27,7 @@ Se ausentes, instrua onde gerar e pare.
 ## PASSO 1 — OTIMIZAÇÃO
 
 ```
-⚡ Marco: Otimizando performance...
+⚡ Marco Tulio: Otimizando performance...
   ▶ Imagens: convertendo para WebP
   ▶ CSS: removendo não utilizado
   ▶ JS: lazy loading
@@ -39,7 +39,7 @@ Se ausentes, instrua onde gerar e pare.
 ## PASSO 2 — VALIDAÇÃO
 
 ```
-🔍 Clara: Validando build...
+🔍 Clara Ribeiro: Validando build...
   ▶ Build: {status}
   ▶ Responsivo: {status}
   ▶ Links: {status}
@@ -51,7 +51,7 @@ Se ausentes, instrua onde gerar e pare.
 ## PASSO 3 — AUTORIZAÇÃO
 
 ```
-✅ Theo: Auditoria de 7 dimensões:
+✅ Theo Castilhos: Auditoria de 7 dimensões:
   ▶ Copy: ✓
   ▶ UI: ✓
   ▶ Performance: ✓
@@ -68,7 +68,7 @@ Se ausentes, instrua onde gerar e pare.
 ## PASSO 4 — DEPLOY
 
 ```
-🚀 Marco: Publicando...
+🚀 Marco Tulio: Publicando...
 ```
 
 ### GitHub
@@ -109,6 +109,6 @@ CNAME   www    cname.vercel-dns.com
 ║  🌐 URL: https://{repo}.vercel.app           ║
 ║  ⚡ LCP: {tempo}s                            ║
 ╠══════════════════════════════════════════════╣
-║  ✅ Theo: {avaliação final}                  ║
+║  ✅ Theo Castilhos: {avaliação final}                  ║
 ╚══════════════════════════════════════════════╝
 ```

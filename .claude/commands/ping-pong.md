@@ -20,7 +20,7 @@ Leia os 3 agentes do Squad Descoberta:
 ║  SQUAD DESCOBERTA                           ║
 ╚══════════════════════════════════════════════╝
 
-🔍 David: Antes de começar, separa:
+🔍 David Ogilvy: Antes de começar, separa:
 
   ⚡ Sua foto (quadrada, rosto visível)
   ⚡ Print do seu melhor resultado
@@ -33,7 +33,7 @@ Leia os 3 agentes do Squad Descoberta:
 ```
 
 Se `docs/PRD.md` existe com `status: approved`:
-`🔍 David: Sessão anterior encontrada. Sobrescrever? (s/n)`
+`🔍 David Ogilvy: Sessão anterior encontrada. Sobrescrever? (s/n)`
 
 ---
 
@@ -54,22 +54,22 @@ Se `docs/PRD.md` existe com `status: approved`:
 ║  {▓▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░░}  {%}%     ║
 ╚══════════════════════════════════════════════╝
 
-🔍 David: {pergunta}
+🔍 David Ogilvy: {pergunta}
 ```
 
 Gary questiona quando necessário:
 ```
-🎯 Gary: {questionamento}
+🎯 Gary Halbert: {questionamento}
 ```
 
 Claude valida:
 ```
-✅ Claude: {confirmação ou ajuste}
+✅ Claude Hopkins: {confirmação ou ajuste}
 ```
 
 Transição:
 ```
-🔍 David: Entendido — {resumo em 1 linha}. Próxima:
+🔍 David Ogilvy: Entendido — {resumo em 1 linha}. Próxima:
 ```
 
 ---
@@ -91,7 +91,7 @@ Transição:
 
 **P4:** `Nome da oferta e em UMA frase — o que a pessoa consegue fazer depois de comprar?`
 → `nome_produto` + `transformacao`
-*Gary sempre aqui — questiona se vago.*
+*Gary Halbert sempre aqui — questiona se vago.*
 
 **P5:** `Entregáveis e bônus — uma linha cada.`
 → `entregaveis` + `bonus`
@@ -119,7 +119,7 @@ Transição:
   3️⃣  📦 Estoque  4️⃣  📅 Agenda  5️⃣  🚫 Sem
 ```
 → `escassez_tipo` + `escassez_valor`
-*Claude avalia credibilidade.*
+*Claude Hopkins avalia credibilidade.*
 
 ---
 
@@ -127,7 +127,7 @@ Transição:
 
 **P9:** `Comprador ideal, o que quer resolver AGORA, e como está se sentindo?`
 → `publico_comprador` + `demanda_urgente` + `estado_emocional`
-*Gary se avatar vago.*
+*Gary Halbert se avatar vago.*
 
 **P10:** `O que acontece se NÃO resolver? E as 3 maiores vantagens de quem compra?`
 → `custo_inacao` + `vantagens_compra`

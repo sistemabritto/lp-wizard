@@ -25,7 +25,7 @@ Leia os 3 agentes do Squad Conteúdo:
 Leia `docs/PRD.md` e `.claude/skills/copy-framework/SKILL.md`.
 
 ```
-✍️ John: PRD carregado. 15 seções. ~20 minutos.
+✍️ John Caples: PRD carregado. 15 seções. ~20 minutos.
   Produto: {nome_produto}
   Avatar: {publico_comprador}
   
@@ -41,28 +41,28 @@ Atualize `docs/PLANO.md`: E1 → `em_andamento`
 ```
 ━━━ SEÇÃO {N}/15: {NOME} ━━━━━━━━━━━━━━━━━━━━
 
-✍️ John: "{versão principal}"
-🎯 Gene: "{refinamento persuasivo}"
-✅ Robert: "{aprova ou solicita ajuste}"
+✍️ John Caples: "{versão principal}"
+🎯 Gene Schwartz: "{refinamento persuasivo}"
+✅ Robert Collier: "{aprova ou solicita ajuste}"
 ```
 
 **Se Gene revisar:**
 ```
-🎯 Gene: {sugestão específica}
-✍️ John: {aplica ou justifica}
+🎯 Gene Schwartz: {sugestão específica}
+✍️ John Caples: {aplica ou justifica}
 ```
 
 **Se Robert vetar:**
 ```
-✅ Robert: Vetado — {motivo}. Precisa de {ajuste}.
-[John reescreve → Robert reavalia]
+✅ Robert Collier: Vetado — {motivo}. Precisa de {ajuste}.
+[John Caples reescreve → Robert Collier reavalia]
 ```
 
 **Empate ou dúvida:**
 ```
 ⚖️ Sua decisão:
-  A (John): {versão}
-  B (Gene): {versão}
+  A (John Caples): {versão}
+  B (Gene Schwartz): {versão}
 Qual prefere? (A/B ou sugira:)
 ```
 
@@ -97,7 +97,7 @@ Qual prefere? (A/B ou sugira:)
 ║  15/15 seções aprovadas                      ║
 ║  Ajustes: {N}                                ║
 ╠══════════════════════════════════════════════╣
-║  ✅ Robert: {avaliação em 1 linha}           ║
+║  ✅ Robert Collier: {avaliação em 1 linha}           ║
 ╠══════════════════════════════════════════════╣
 ║  ⚡ PRÓXIMO: /gerar-imagens                  ║
 ╚══════════════════════════════════════════════╝
